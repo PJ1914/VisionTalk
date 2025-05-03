@@ -1,0 +1,80 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+  }
+  
+  .home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15%;
+    background-color: transparent;
+    color: #F8FAFC;
+    min-height: 100%;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+  
+  .hero {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    opacity: 1; /* Default to visible */
+    transition: transform 0.3s ease, color 0.3s ease, opacity 1s ease;
+  }
+  
+  .hero h1:hover {
+    transform: scale(1.05);
+  }
+  
+  .hero .highlight {
+    color: #38BDF8;
+    transition: color 0.3s ease;
+  }
+  
+  .hero p {
+    font-size: 1.5rem;
+    color: #CBD5E1;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+  
+  .particle-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+  }
+  
+  /* Responsive adjustments */
+  @media screen and (max-width: 768px) {
+    .home {
+      padding: 3rem 1rem;
+    }
+  
+    .hero h1 {
+      font-size: 2.5rem;
+    }
+  
+    .hero p {
+      font-size: 1.2rem;
+    }
+  }
