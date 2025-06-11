@@ -691,7 +691,7 @@ function ChatUI() {
         };
       } else if (option === 'Story') {
         const res = await axios.post('api/storytelling', { choice: '', language: settings.language || 'en' }, {
-          timeout: 10000,
+          timeout: 60000,
         });
         console.log('Backend response for story:', res.data);
         aiMessage = {
@@ -711,7 +711,7 @@ function ChatUI() {
         };
       } else if (option === 'Navigation') {
         const res = await axios.post('api/navigation', { language: settings.language || 'en' }, {
-          timeout: 10000,
+          timeout: 60000,
         });
         console.log('Backend response for navigation:', res.data);
         aiMessage = {
